@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta chrset="UTF 8">
+  <title>Event Registration</title>
+</head>
+
+<body>
+  <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <h1> Welcome Dear user! </h1>
+  <input type="button" value="Proceed" (click)="showHide()" [disabled]="temp" />
+  <br><br>
+  <div *ngIf="IsVisible"> 
+    <div ng-app="">First Name <br /> <input type="text" [(ngModel)]="First"></div>
+    <div ng-app="">Last Name <br /> <input type="text" [(ngModel)]="Last"></div>
+    <div ng-app="">Gender <br /> <input type="text" [(ngModel)]="Gender"></div>
+    <div ng-app="">City <br /> <input type="text" [(ngModel)]="City"></div>
+    <div ng-app="">Pin Code <br /> <input type="text" [(ngModel)]="PinCode"></div>{{PinCode}}
+    Hey!! {{First}} {{Last}} from {{City}}, nice to see you here!
+    Wish You luck.
+  </div>
+</body>
+
+</html>
